@@ -3,6 +3,7 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { Usercard } from "./components/organisms/user/UserCard";
+import { DefaultLayout } from "./components/templetes/DefaultLayout";
 import { HeaderOnly } from "./components/templetes/HeaderOnly";
 import "./styles.css";
 
@@ -20,13 +21,13 @@ const user = {
 export default function App() {
   return (
     <BrowserRouter>
-      <HeaderOnly>
+      <DefaultLayout>
         <PrimaryButton>テスト</PrimaryButton>
         <SecondaryButton>検索</SecondaryButton>
         <br />
         <SearchInput />
         <Usercard user={user} />
-      </HeaderOnly>
+      </DefaultLayout>
     </BrowserRouter>
   );
 }
