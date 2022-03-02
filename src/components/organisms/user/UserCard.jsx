@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card } from "../../atoms/card/Card";
 import { UserIconWithName } from "../../molecules/user/UserIconWithName";
 
-export const Usercard = (props) => {
+export const UserCard = (props) => {
   const { user } = props;
 
   return (
